@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Swiits</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app-wrap">
+            <div class="top">
+              <img class="logo" src="img/logo.svg" alt="logo" width="52px" height="26px"/>
+
+              <h4 class="beta">We're on public beta!</h4>
+
+              <nav class="menu">
+                <ul>
+                  <li><a href="#">LOGIN</a></li>
+                  <li><a href="#">SIGN UP</a></li>
+                </ul>
+              </nav>
+            </div>
+            <section class="bottom">
+                <div class="left">
+                    <div class="heading">
+                          <a href="#" class="submit-post">SUBMIT NEW POST</a>
+                        <form class="search-post" action="index.html" method="post">
+                            <input type="search" placeholder="SEARCH" class="search-post">
+                            </intput>
+                        </form>
+                    </div>
+
+                    <div class="navigation">
+                        <a class="option option-active" href="/">HOME</a>
+                        <div class="navigation__sub">
+                            <div class="gradient gradientLeft"></div>
+                            <div class="gradient gradientRight"></div>
+                            <ol>
+                                <li><a class="option" href="#">HARDWARE</a></li>
+                                <li><a class="option" href="#">JAVASCRIPT</a></li>
+                                <li><a class="option" href="#">PYTHON</a></li>
+                                <li><a class="option" href="#">PRODUCTIVITY</a></li>
+                                <li><a class="option" href="#">TOOLS</a></li>
+                                <li><a class="option" href="#">TOOLS</a></li>
+                            </ol>
+                        </div>
+                        <div class="arrows">
+                            <a href="#" class="arrowLeft"><span><svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.05833636,0 L0,1.05654696 L6.95502928,8 L6.64746554e-16,14.943453 L1.05833636,16 L8.54271718,8.52827348 C8.83496729,8.23651377 8.83496729,7.7634825 8.54271718,7.47172652 L1.05833636,0 L1.05833636,0 Z" fill="#999" transform="matrix(-1 0 0 1 8.762 0)" fill-rule="evenodd"></path></svg></span></a>
+                            <a href="#" class="arrowRight"><span><svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.05833636,0 L0,1.05654696 L6.95502928,8 L6.64746554e-16,14.943453 L1.05833636,16 L8.54271718,8.52827348 C8.83496729,8.23651377 8.83496729,7.7634825 8.54271718,7.47172652 L1.05833636,0 L1.05833636,0 Z" fill="#999" fill-rule="evenodd"></path></svg></span></a>
+                        </div>
+                    </div>
+
+                    <div class="posts__info">
+                        <h4 class="posts__quantity">153 posts</h4>
+                        <div class="posts__filter">
+                          <a href="#"><h4>More Commented <span><svg width="8px" height="4px" viewBox="501 7 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon stroke="none" fill="#9B9B9B" fill-rule="evenodd" transform="translate(505.000000, 9.500000) rotate(-180.000000) translate(-505.000000, -9.500000) " points="509 11 501 11 505 8"></polygon></svg></span></h4></a>
+                        </div>
+                    </div>
+
+
+                    <div class="posts-container"> <!-- post-container -->
+
+                      <!-- <div class="post">
+                        <div class="post__thumbnail">
+                            <img class="post__image" src="img/post/post-1@2x.jpg" width="112" height="92" alt="post image"/>
+                        </div>
+                        <div class="post__right">
+
+                          <div class="post__content">
+                            <span class="post-description">Choosing The Best Audio Player Software For Your Computer</span>
+                            <span class="post-link"><a href="#">www.audible.com/adblbestsellers</a></span>
+                          </div>
+
+                          <div class="post__meta">
+                            <div class="post-action-buttons">
+                              <button rel="vote-button" class="vote-button">
+                                <div class="button-container">
+                                  <div class="post-vote-arrow">
+                                      <svg width="9px" height="9px" viewBox="0 5 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon stroke="none" fill="#4A4A4A" fill-rule="evenodd" points="9 14 0 14 4.5 5"></polygon></svg>
+                                      151
+                                  </div>
+                                </div>
+                              </button>
+                              <a href="" class="comment-button">
+                                  <div class="button-container">
+                                      <span><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="#4A4A4A" fill-rule="evenodd"></path></svg></span>
+                                      10
+                                  </div>
+                              </a>
+                            </div>
+                            <div class="association">
+
+                                <a class="association__first">
+                                    <div class="button-container">
+                                      WEB
+                                    </div>
+                                </a>
+                                <a href="/" class="association__more">+ 4</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div>
+                    <div class="post"></div> -->
+                  </div>  <!-- End post-container -->
+
+                </div>
+                <div class="right">
+                    <div class="comments-heading">
+                        <div class="">
+                          <p class="comments-heading__title">Choosing The Best Audio Player Software For Your Compute</p>
+                          <a href="#" class="comments-heading__url">www.audible.com/adblbestsellers</a>
+                          <div class="comments-heading__meta">
+
+                            <div class="comments-action-buttons">
+                              <button rel="vote-button" class="vote-button">
+                                <div class="button-container">
+                                  <div class="post-vote-arrow">
+                                      <svg width="9px" height="9px" viewBox="0 5 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon stroke="none" fill="#4A4A4A" fill-rule="evenodd" points="9 14 0 14 4.5 5"></polygon></svg>
+                                      151
+                                  </div>
+                                </div>
+                              </button>
+                              <div class="voters">
+                                <span class="user-image">
+                                  <div class="user-image-pic">
+                                    <img class="placeholer" src="https://randomuser.me/api/portraits/men/20.jpg" alt="" width="28"/>
+                                  </div>
+                                </span>
+                                <span class="user-image">
+                                  <div class="user-image-pic">
+                                    <img class="placeholer" src="https://randomuser.me/api/portraits/men/5.jpg" alt="" width="28"/>
+                                  </div>
+                                </span>
+                                <span class="user-image">
+                                  <div class="user-image-pic">
+                                    <img class="placeholer" src="https://randomuser.me/api/portraits/men/23.jpg" alt="" width="28"/>
+                                  </div>
+                                </span>
+                              </div>
+
+                            </div>
+                            <!-- <div class="submited">
+                              <p>
+                                Submited by <a href="#">Rafael Medina</a> 4 hours ago
+                              </p>
+                            </div> -->
+                          </div>
+                        </div>
+                          <div class="comments-picture">
+                              <img src="img/post/post-header@2x.jpg" height="110" width="134" alt="Post Photo" />
+                          </div>
+                    </div>
+
+
+                    <div class="discussion">
+                        <div class="discussion-header">
+                          <div class="title">DISCUSSION</div>
+                          <div class="filter"><a href="#">Most upvoted</a></div>
+                        </div>
+                        <div class="discussion-comments">
+                          <div class="thread">
+                              <a href="" class="profilepic">
+                                <img class="placeholer" src="https://randomuser.me/api/portraits/men/5.jpg" alt="" width="28"/>
+                              </a>
+
+                              <div class="heading-text">
+                                  <div class="name"><a href="#">Jack Dweck</a></div>
+                                  <div class="headline"></div>
+                              </div>
+                              <div class="body">
+                                This has to be the most unique product launch I've ever seen. Time for a trip to Venice Beach 😎.
+                              </div>
+                              <div class="actions">
+                                UPVOTE TWEET SHARE 4 hours ago
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+
+</html>

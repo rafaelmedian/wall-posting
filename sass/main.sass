@@ -1,0 +1,339 @@
+@import compass/css3
+
+$tomato: #EA586F
+$seafom-blue: #5EACDB
+$white: #FFFFFF
+$white-blue: #f4f8fb
+$pale-blue: #dfe5ec
+$gray-light: #DFDFDF
+$gray-regular: #979797
+$gray-medium: #717171
+$gray-bold: #4A4A4A
+
+
+
+$h1: 1.286em  /* 18px */
+$h2: 1.143em  /* 16px */
+$h3: 1.000em	/* 14px */
+$h4: 0.857em  /* 12px */
+
+
+html, body
+    font-size: 14px
+    font-family: 'Work Sans', sans-serif
+    height: 100%
+    overflow: hidden
+    background-color: $white-blue
+
+
+.app-wrap
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    margin: 0 auto
+    max-width: 1440px
+    background-color: $white
+    box-shadow: 0px 1px 0 $pale-blue
+    border-radius: 0 0 3px 3px
+    border-left: 1px solid $pale-blue
+    border-right: 1px solid $pale-blue
+    border-bottom: 1px solid #d2dbe3
+    overflow: hidden
+
+    *, *:after, *:before
+        +box-sizing(border-box)
+
+    .top
+        text-align: center
+        position: absolute
+        height: 4em
+        padding: 1em
+        line-height: 1.8em
+        width: 100%
+        border-bottom: .0625em solid rgba(0, 0, 0, .1)
+
+    .bottom
+        position: absolute
+        top: 4em
+        bottom: 0
+        width: 100%
+
+        .left
+            border-right: .0625em solid rgba(0, 0, 0, .1)
+            position: absolute
+            width: 38%
+            height: 100%
+            overflow: auto
+
+            .post
+                height: 10.715em
+                border-bottom: .0625em solid rgba(0, 0, 0, .1)
+                cursor: pointer
+
+                &:hover
+                    background: rgba(0, 0, 0, .1)
+                    border-bottom: .0625em solid rgba(0, 0, 0, 0)
+
+                &:last-child
+                    border-bottom: 0
+        .right
+            position: absolute
+            width: 62%
+            right: 0
+            height: 100%
+            overflow: auto
+            padding: 2.2em 2.8571em
+
+    .logo
+        float: left
+    .beta
+        +inline-block
+        margin: 0
+        color: $gray-regular
+        font-weight: 400
+        font-style: normal
+        font-size: .85rem
+    .menu
+        +inline-block
+        text-align: right
+        float: right
+        font-weight: 600
+        font-size: 1em
+        ul
+            line-height: 2em
+            margin: 0 0
+            padding-left: 0
+            list-style-type: none
+            li
+                display: inline
+                padding-right: 1em
+                a
+                    color: $tomato
+                    text-decoration: none
+    .heading
+        display: flex
+        justify-content: space-between
+        padding: 2em 1em 1.2em 1.5em
+        .submit-post
+            text-decoration: none
+            color: $tomato
+            font-weight: 600
+            letter-spacing: .08em
+            line-height: 31px
+        .search-post input
+            border-radius: 1.2em
+            border: 1px solid $gray-light
+            outline: none
+            transition: border-color 0.2s ease
+            background: #fff url(../img/search.png) 8px 5px no-repeat
+            background-size: 20px
+            vertical-align: middle !important
+            padding: 7px 7px 7px 2.5em
+            font-size: .88rem
+            color: $gray-medium
+        .search-post:focus
+            border-color: $seafom-blue
+
+    .navigation
+        height: 33px
+        padding: 0 1em 0 0
+        display: flex
+        .navigation__sub
+            position: relative
+            flex: 1
+            overflow: hidden
+            .gradient
+                position: absolute
+                z-index: 1
+                height: 33px
+            .gradientLeft
+                background: linear-gradient(90deg,#fff 0,hsla(0,0%,100%,0))
+                left: -1px
+                width: 1rem
+            .gradientRight
+                background: linear-gradient(270deg,#fff 0,hsla(0,0%,100%,0))
+                right: -1px
+                width: 2rem
+        .navigation__sub ol
+            display: flex
+            margin: 0
+            padding: 0
+            overflow-x: scroll
+            overflow-y: hidden
+            list-style: none
+        .navigation__sub li:first-child
+            margin: 0 0 0 5px
+        .navigation__sub li
+            flex: 0 0 auto
+            height: 33px
+        .navigation__sub a
+            text-decoration: none
+            color: $gray-medium
+
+        .option
+            text-decoration: none
+            color: $gray-medium
+            padding: 0 1.5em
+            display: block
+            height: 33px
+            line-height: 33px
+        .option-active
+            font-weight: 600
+        .arrows
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 2.5em
+            .arrowLeft
+                cursor: initial
+                opacity: 0.5
+            .arrowRight
+                cursor: pointer
+
+
+
+    .posts__info
+        margin: 0em 1em 0em 1.5em
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid $gray-light
+        .posts__quantity
+            margin-bottom: 10px
+            font-size: 1em
+            font-weight: 400
+            color: $gray-regular
+        .posts__filter a
+            text-decoration: none
+            color: $gray-regular
+        .posts__filter h4
+            font-weight: 300
+            margin-bottom: 10px
+
+    .post
+        display: flex
+        flex-wrap: nowrap
+        padding: 2em 1.5em
+        .post__right
+            padding: 0 0 0 1em
+            display: flex
+            flex: 1
+            flex-wrap: nowrap
+            flex-direction: column
+            .post__content
+                display: flex
+                flex-direction: column
+                .post-description
+                    text-transform: capitalize
+                    color: $gray-bold
+                    font-weight: 500
+                    font-size: 1.1em
+                    line-height: 18px
+                    margin-bottom: 8px
+                .post-link a
+                    text-decoration: none
+                    color: $seafom-blue
+                .post-link a:hover
+                    text-decoration: underline
+                    color: darken($seafom-blue, .8)
+            .post__meta
+                color: $gray-regular
+                margin-top: auto
+                display: flex
+                justify-content: space-between
+                .post-action-buttons
+                    display: flex
+                    .vote-button
+                        background: $white
+                        border: 1px solid $gray-light
+                        border-radius: 3px
+                        outline: 0
+                        color: $gray-regular
+                        margin-right: 10px
+                    .vote-button:hover
+                        background: $gray-light
+                    .comment-button
+                        text-decoration: none
+                        color: $gray-regular
+                .association
+                    display: flex
+                    .association__first
+                        margin-right: 20px
+                    .association__more
+                        text-decoration: none
+                        color: $gray-regular
+
+
+    .comments-heading
+        display: flex
+        justify-content: space-between
+        .comments-heading__title
+            font-size: $h1
+            text-transform: capitalize
+            color: $gray-bold
+            line-height: $h1
+            margin: 0 0 10px 0px
+        .comments-heading__url
+            font-size: $h3
+            color: $seafom-blue
+        .comments-heading__meta
+            display: flex
+            margin-top: 16px
+            .comments-action-buttons
+                display: flex
+                .vote-button
+                    font-weight: 300
+                    font-size: $h3
+                    color: $gray-medium
+                    height: 19px
+                    border: none
+                    background: transparent
+                    cursor: pointer
+                    padding-right: 10px
+            .voters
+                .user-image
+                    display: inline-block
+                    position: relative
+                    margin-left: -6px
+                    .user-image-pic
+                        img
+                            height: 100%
+                            vertical-align: bottom
+                            border-radius: 100%
+                .user-image:first-child
+                    margin-left: 0px
+    .discussion
+        .discussion-header
+            display: flex
+            justify-content: space-between
+            margin-top: 2em
+            margin-bottom: 20px
+            padding-top: 1em
+            border-top: 1px solid $gray-light
+            color: $gray-regular
+            font-size: $h4
+            > .title
+                text-transform: uppercase
+            > .filter a
+                text-decoration: none
+                color: $gray-regular
+        .thread
+            margin: 0 0 20px
+            padding: 7px 0 0 47px
+            position: relative
+            > .profilepic
+                position: absolute
+                left: 0
+                top: 0
+                img
+                    border-radius: 100%
+            .heading-text
+                margin: 0 0 10px
+                > .name a
+                    font-size: $h2
+                    color: $gray-bold
+                    font-weight: 500
+                    text-decoration: none
+            .body
+                margin: 0 0 10px

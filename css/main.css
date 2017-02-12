@@ -1,0 +1,309 @@
+html, body {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f4f8fb; }
+
+.app-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 0 #dfe5ec;
+  border-radius: 0 0 3px 3px;
+  border-left: 1px solid #dfe5ec;
+  border-right: 1px solid #dfe5ec;
+  border-bottom: 1px solid #d2dbe3;
+  overflow: hidden; }
+  .app-wrap *, .app-wrap *:after, .app-wrap *:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .app-wrap .top {
+    text-align: center;
+    position: absolute;
+    height: 4em;
+    padding: 1em;
+    line-height: 1.8em;
+    width: 100%;
+    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.1); }
+  .app-wrap .bottom {
+    position: absolute;
+    top: 4em;
+    bottom: 0;
+    width: 100%; }
+    .app-wrap .bottom .left {
+      border-right: 0.0625em solid rgba(0, 0, 0, 0.1);
+      position: absolute;
+      width: 38%;
+      height: 100%;
+      overflow: auto; }
+      .app-wrap .bottom .left .post {
+        height: 10.715em;
+        border-bottom: 0.0625em solid rgba(0, 0, 0, 0.1);
+        cursor: pointer; }
+        .app-wrap .bottom .left .post:hover {
+          background: rgba(0, 0, 0, 0.1);
+          border-bottom: 0.0625em solid transparent; }
+        .app-wrap .bottom .left .post:last-child {
+          border-bottom: 0; }
+    .app-wrap .bottom .right {
+      position: absolute;
+      width: 62%;
+      right: 0;
+      height: 100%;
+      overflow: auto;
+      padding: 2.2em 2.8571em; }
+  .app-wrap .logo {
+    float: left; }
+  .app-wrap .beta {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    margin: 0;
+    color: #979797;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.85rem; }
+  .app-wrap .menu {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-align: right;
+    float: right;
+    font-weight: 600;
+    font-size: 1em; }
+    .app-wrap .menu ul {
+      line-height: 2em;
+      margin: 0 0;
+      padding-left: 0;
+      list-style-type: none; }
+      .app-wrap .menu ul li {
+        display: inline;
+        padding-right: 1em; }
+        .app-wrap .menu ul li a {
+          color: #EA586F;
+          text-decoration: none; }
+  .app-wrap .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em 1.2em 1.5em; }
+    .app-wrap .heading .submit-post {
+      text-decoration: none;
+      color: #EA586F;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      line-height: 31px; }
+    .app-wrap .heading .search-post input {
+      border-radius: 1.2em;
+      border: 1px solid #DFDFDF;
+      outline: none;
+      transition: border-color 0.2s ease;
+      background: #fff url(../img/search.png) 8px 5px no-repeat;
+      background-size: 20px;
+      vertical-align: middle !important;
+      padding: 7px 7px 7px 2.5em;
+      font-size: 0.88rem;
+      color: #717171; }
+    .app-wrap .heading .search-post:focus {
+      border-color: #5EACDB; }
+  .app-wrap .navigation {
+    height: 33px;
+    padding: 0 1em 0 0;
+    display: flex; }
+    .app-wrap .navigation .navigation__sub {
+      position: relative;
+      flex: 1;
+      overflow: hidden; }
+      .app-wrap .navigation .navigation__sub .gradient {
+        position: absolute;
+        z-index: 1;
+        height: 33px; }
+      .app-wrap .navigation .navigation__sub .gradientLeft {
+        background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0));
+        left: -1px;
+        width: 1rem; }
+      .app-wrap .navigation .navigation__sub .gradientRight {
+        background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0));
+        right: -1px;
+        width: 2rem; }
+    .app-wrap .navigation .navigation__sub ol {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      list-style: none; }
+    .app-wrap .navigation .navigation__sub li:first-child {
+      margin: 0 0 0 5px; }
+    .app-wrap .navigation .navigation__sub li {
+      flex: 0 0 auto;
+      height: 33px; }
+    .app-wrap .navigation .navigation__sub a {
+      text-decoration: none;
+      color: #717171; }
+    .app-wrap .navigation .option {
+      text-decoration: none;
+      color: #717171;
+      padding: 0 1.5em;
+      display: block;
+      height: 33px;
+      line-height: 33px; }
+    .app-wrap .navigation .option-active {
+      font-weight: 600; }
+    .app-wrap .navigation .arrows {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 2.5em; }
+      .app-wrap .navigation .arrows .arrowLeft {
+        cursor: initial;
+        opacity: 0.5; }
+      .app-wrap .navigation .arrows .arrowRight {
+        cursor: pointer; }
+  .app-wrap .posts__info {
+    margin: 0em 1em 0em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFDF; }
+    .app-wrap .posts__info .posts__quantity {
+      margin-bottom: 10px;
+      font-size: 1em;
+      font-weight: 400;
+      color: #979797; }
+    .app-wrap .posts__info .posts__filter a {
+      text-decoration: none;
+      color: #979797; }
+    .app-wrap .posts__info .posts__filter h4 {
+      font-weight: 300;
+      margin-bottom: 10px; }
+  .app-wrap .post {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2em 1.5em; }
+    .app-wrap .post .post__right {
+      padding: 0 0 0 1em;
+      display: flex;
+      flex: 1;
+      flex-wrap: nowrap;
+      flex-direction: column; }
+      .app-wrap .post .post__right .post__content {
+        display: flex;
+        flex-direction: column; }
+        .app-wrap .post .post__right .post__content .post-description {
+          text-transform: capitalize;
+          color: #4A4A4A;
+          font-weight: 500;
+          font-size: 1.1em;
+          line-height: 18px;
+          margin-bottom: 8px; }
+        .app-wrap .post .post__right .post__content .post-link a {
+          text-decoration: none;
+          color: #5EACDB; }
+        .app-wrap .post .post__right .post__content .post-link a:hover {
+          text-decoration: underline;
+          color: #5baada; }
+      .app-wrap .post .post__right .post__meta {
+        color: #979797;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between; }
+        .app-wrap .post .post__right .post__meta .post-action-buttons {
+          display: flex; }
+          .app-wrap .post .post__right .post__meta .post-action-buttons .vote-button {
+            background: #FFFFFF;
+            border: 1px solid #DFDFDF;
+            border-radius: 3px;
+            outline: 0;
+            color: #979797;
+            margin-right: 10px; }
+          .app-wrap .post .post__right .post__meta .post-action-buttons .vote-button:hover {
+            background: #DFDFDF; }
+          .app-wrap .post .post__right .post__meta .post-action-buttons .comment-button {
+            text-decoration: none;
+            color: #979797; }
+        .app-wrap .post .post__right .post__meta .association {
+          display: flex; }
+          .app-wrap .post .post__right .post__meta .association .association__first {
+            margin-right: 20px; }
+          .app-wrap .post .post__right .post__meta .association .association__more {
+            text-decoration: none;
+            color: #979797; }
+  .app-wrap .comments-heading {
+    display: flex;
+    justify-content: space-between; }
+    .app-wrap .comments-heading .comments-heading__title {
+      font-size: 1.286em;
+      text-transform: capitalize;
+      color: #4A4A4A;
+      line-height: 1.286em;
+      margin: 0 0 10px 0px; }
+    .app-wrap .comments-heading .comments-heading__url {
+      font-size: 1em;
+      color: #5EACDB; }
+    .app-wrap .comments-heading .comments-heading__meta {
+      display: flex;
+      margin-top: 16px; }
+      .app-wrap .comments-heading .comments-heading__meta .comments-action-buttons {
+        display: flex; }
+        .app-wrap .comments-heading .comments-heading__meta .comments-action-buttons .vote-button {
+          font-weight: 300;
+          font-size: 1em;
+          color: #717171;
+          height: 19px;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          padding-right: 10px; }
+      .app-wrap .comments-heading .comments-heading__meta .voters .user-image {
+        display: inline-block;
+        position: relative;
+        margin-left: -6px; }
+        .app-wrap .comments-heading .comments-heading__meta .voters .user-image .user-image-pic img {
+          height: 100%;
+          vertical-align: bottom;
+          border-radius: 100%; }
+      .app-wrap .comments-heading .comments-heading__meta .voters .user-image:first-child {
+        margin-left: 0px; }
+  .app-wrap .discussion .discussion-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    padding-top: 1em;
+    border-top: 1px solid #DFDFDF;
+    color: #979797;
+    font-size: 0.857em; }
+    .app-wrap .discussion .discussion-header > .title {
+      text-transform: uppercase; }
+    .app-wrap .discussion .discussion-header > .filter a {
+      text-decoration: none;
+      color: #979797; }
+  .app-wrap .discussion .thread {
+    margin: 0 0 20px;
+    padding: 7px 0 0 47px;
+    position: relative; }
+    .app-wrap .discussion .thread > .profilepic {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .app-wrap .discussion .thread > .profilepic img {
+        border-radius: 100%; }
+    .app-wrap .discussion .thread .heading-text {
+      margin: 0 0 10px; }
+      .app-wrap .discussion .thread .heading-text > .name a {
+        font-size: 1.143em;
+        color: #4A4A4A;
+        font-weight: 500;
+        text-decoration: none; }
+    .app-wrap .discussion .thread .body {
+      margin: 0 0 10px; }

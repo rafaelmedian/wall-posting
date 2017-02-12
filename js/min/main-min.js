@@ -1,0 +1,1 @@
+$(document).ready(function(){$.ajax({method:"GET",url:"http://localhost:3000/posts",success:function(o,t,c){console.log(o)},error:function(o,t){}})});

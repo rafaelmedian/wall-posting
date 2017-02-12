@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Pereze",
+      "email": "jperez@gmail.com"
+    },
+    {
+      "name": "David Ortega",
+      "email": "david@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "/$^*!~  ",
+      "email": "asdasda@email.com",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "thumbnail": "https://randomuser.me/api/portraits/women/92.jpg",
+      "title": "Introducing Nomulus: an open source top-level domain name registry ",
+      "url": "http://sourceforge.net",
+      "votes": 0,
+      "comments": 0,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://randomuser.me/api/portraits/men/50.jpg",
+      "title": "Danny modificado",
+      "url": "http://google.net",
+      "votes": 23111222,
+      "comments": 999999,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://randomuser.me/api/portraits/women/4.jpg",
+      "title": "Introducing Nomulus: an open source top-level domain name registry ",
+      "url": "http://sourceforge.net",
+      "votes": 0,
+      "comments": 0,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://randomuser.me/api/portraits/men/20.jpg",
+      "title": "Hola Danny Feliz",
+      "url": "http://google.com",
+      "votes": 9999,
+      "comments": 12233,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://randomuser.me/api/portraits/men/20.jpg",
+      "title": "Hola Danny Feliz",
+      "url": "http://google.com",
+      "votes": 9999,
+      "comments": 12233,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://randomuser.me/api/portraits/men/20.jpg",
+      "title": "Hola Danny Feliz",
+      "url": "http://google.com",
+      "votes": 9999,
+      "comments": 12233,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://randomuser.me/api/portraits/men/20.jpg",
+      "title": "Hola Danny Feliz",
+      "url": "http://google.com",
+      "votes": 9999,
+      "comments": 12233,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://randomuser.me/api/portraits/men/20.jpg",
+      "title": "Hola Danny Feliz",
+      "url": "http://google.com",
+      "votes": 9999,
+      "comments": 12233,
+      "tags": [
+        "UI/UX",
+        "WEB DEVELOPMENT",
+        "HARDWARE"
+      ],
+      "created_at": "2016-10-19"
+    }
+  ]
+}
