@@ -3,6 +3,10 @@ This is a WIP for a prototype
 
 Doenst have mobile version and comments section is not finished.
 
+
+![1](/screenshots/desktop.jpg?raw=true)
+![2](/screenshots/sign-in.jpg?raw=true)
+
 ## Setup
 1. install [json-server](https://github.com/typicode/json-server) `npm install -g json-server`
 2. Go to 'database' folder and run `json-server --watch db.json`
